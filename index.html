@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+    <head>
+        <title>Etienne's Extraordinary Journal</title>
+        <meta name="author" content="Etienne Robin">
+        <meta name="description" content="An example journal for CSE 110">
+        <meta name="robots" content="noindex,nofollow">
+        <link rel="icon" href="/media/favicon.ico">
+    </head>
+
+    <body>
+
+        <div>
+            <header> <!-- Header for the whole page -->
+                <span><h1>Etienne's Extraordinary Journal</h1></span>
+                <span><h3>A place for my daily journal entries :-)</h3></span>
+            </header>
+        </div>
+
+        <div>
+            <nav> <!-- Navigation links -->
+                <h2>Find an Entry</h2>
+                <menu>
+                    <li><a href="#3">Saturday</a></li>
+                    <li><a href="#2">Friday</a></li>
+                    <li><a href="#1">Thursday</a></li>
+                </menu>
+            </nav>
+        </div>
+
+        <div>
+            <main> <!-- Main content -->
+                <h2>Journal Entries</h2>
+
+                <hr size="4" color="#333333">
+
+                <section id="3">
+                    <h3>Homework, and Some Exploring!</h3>
+                    <h3>Saturday 2021-04-10</h3>
+                    <p>
+                        Here's a list of things I did today, in order:
+                    </p>
+                    <ol>
+                        <li>Got out of bed</li>
+                        <li>Worked on this CSE 110 lab</li>
+                        <li>Went on a walk in the neighborhood</li>
+                        <li>Worked on this CSE 110 lab again</li>
+                    </ol>
+                    <p>
+                        Also, today my girlfriend sent me this picture of a crayfish she saw in a pond,
+                        which was pretty interesting!
+                    </p>
+                    <img src="/media/crayfish.jpg" alt="Crayfish in Pond" width="665" height="887">
+                    <br>
+                    <p>
+                        She also sent me this hilarious photo of her cat looking at the webcam up close:
+                    </p>
+                    <img src="/media/cat.jpg" alt="Cat Looking at Camera">
+                    <br>
+                    <br>
+                    <details>
+                        <summary>Here's a video of the same cat if you want!</summary>
+                        <video controls width="405" height="720">
+                            <source src="/media/cat_vid.mp4"
+                                type="video/mp4">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </details>
+                </section>
+
+                <hr size="4" color="#333333">
+
+                <section id="2">
+                    <h3>Mostly Procrastination, but Some Work</h3>
+                    <h3>Friday 2021-04-09</h3>
+                    <p>Here's some of the stuff I did today, not in order:</p>
+                    <ul>
+                        <li>Poked around with the Slack API and made a slack bot for testing</li>
+                        <li>Watched some lecture videos</li>
+                        <li><em>Slept</em></li>
+                        <li>Watched some <strong>YouTube</strong> videos,
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i>here's a link to one</i></a></li>
+                    </ul>
+                    <p>Here's what the inside of my brain sounded like today:</p>
+                    <audio controls>
+                        <source src="https://upload.wikimedia.org/wikipedia/commons/3/33/Dial_up_modem_noises.ogg" type="audio/ogg">
+                        Sorry, your browser doesn't support embedded audio.
+                    </audio>
+                </section>
+
+                <hr size="4" color="#333333">
+
+                <section id="1">
+                    <h3>Zoom Classes, then <b>Dentist Appointment</b></h3>
+                    <h3>Thursday 2021-04-08</h3>
+                    <p>
+                        Today I went to two Zoom classes, then I went to a dentist appointment for a normal dental
+                        cleaning, and finally I went to the CSE 110 lecture at 4 PM. This was a new dentist for me
+                        since my family had moved to a new city two years ago. I was very happy to meet my new dentist!
+                    </p>
+                </section>
+
+                <hr size="4" color="#333333">
+            </main>
+        </div>
+
+        <div>
+            <footer> <!-- Footer for the whole page -->
+                <h2>Create A Journal Entry</h2>
+                <form>
+                    <fieldset>
+                        <ul>
+                        <li><label for="titleinput">Title:</label>
+                        <input type="text" id="titleinput" name="user_title"></li>
+                        <br>
+                        <li><label for="dateinput">Date:</label>
+                        <input type="date" id="dateinput" name="user_date"></li>
+                        <br>
+                        <li><label for="dayoftheweekinput">Day of the Week: </label><select id="dayoftheweekinput" name="dayoftheweek">
+                            <option value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                        </select></li>
+                        <br>
+                        <li><label for="messageinput">Message:</label>
+                        <br>
+                        <textarea id="messageinput" name="user_message">Today I had a fantastic day :-)</textarea></li>
+                        </ul>
+                    </fieldset>
+                    <p>Post this entry as:</p>
+                    <input type="radio" id="etienne" name="postas"><label for="etienne">Etienne</label>
+                    <br>
+                    <input type="radio" id="guest" name="postas"><label for="guest">Guest</label>
+                    <br><br>
+                    <label for="entrymoodlist">How did the day go?</label><br>
+                    <input type="text" list="entrymood" id="entrymoodlist" name="user_mood" /><br>
+                    <datalist id="entrymood">
+                        <option value="Great">
+                        <option value="Good">
+                        <option value="Okay">
+                        <option value="Bad">
+                        <option value="Terrible">
+                    </datalist>
+                    <input type="checkbox" id="termsconditions" name="user_agree">
+                    <label for="termsconditions">I agree to the nonexistent terms and conditions</label>
+                    <br><br>
+                    <button type="button">Send</button>
+                </form>
+            </footer>
+        </div>
+
+    </body>
+
+</html>
