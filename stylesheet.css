@@ -1,0 +1,48 @@
+/* this is a comment in CSS */
+body {
+    background-color: #555555;
+}
+
+#header {
+    color: crimson;
+}
+
+.links {
+    color: rgb(0,100,200);
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.bodyheader {
+    color: olivedrab;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: palevioletred;
+}
+
+hr {
+    height: 5mm;
+    background-color: black;
+}
+
+video {
+    width: 405px;
+    height: 720px;
+}
+
+#subtitle {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    font-size: 1.5vw;
+}
+
+#crayfish {
+    width: 5in;
+    height: 6.67in;
+}
