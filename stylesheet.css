@@ -14,13 +14,13 @@ body {
     left: 10px;
 }
 
-.links {
+a.links {
     color: rgb(0,100,200);
     text-align: left;
     font-size: 1.5em;
 }
 
-.bodyheader {
+.bodyheader, a[href*="youtube"] {
     color: olivedrab;
 }
 
@@ -118,4 +118,19 @@ button:hover {
     hr {
       background-color: red;
     }
-  }
+}
+
+section > h3 {
+    font-style: italic;
+}
+
+section ~ hr {
+    background-color: rgb(0, 255, 0);
+}
+
+fieldset + p {
+    font-size: 100px;
+    color: blueviolet;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
